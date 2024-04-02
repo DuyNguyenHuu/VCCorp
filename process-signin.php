@@ -26,5 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 die ("<script>alert('Tài khoản không chính xác!".$row["ACCOUNT"].$account_signin."');window.location.href = 'index.php';</script>");
         }
     }
+    else{
+        die ("<script>alert('Tài khoản không tồn tại. Vui lòng đăng ký tài khoản!');window.location.href = 'signup.php';</script>");
+    }
 }
 ?>
